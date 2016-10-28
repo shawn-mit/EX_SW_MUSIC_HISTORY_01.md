@@ -1,0 +1,129 @@
+body {
+	margin: 5em;
+}
+
+nav {
+	width: 99%;
+	margin: 0, auto;
+}
+
+#wrapper {
+		border-style: solid;
+		border-color: black;
+		border-spacing: 50px;
+		padding : 10px ;
+		
+
+	}
+
+table {
+
+	display: inline-block;
+	border-style: 0.5px;
+	margin : 0.5em;
+
+}
+
+
+
+ nav li {
+	display: inline-block;
+	font-size:18px;
+	font-family: helvetica;
+	list-style-type: none;
+}
+
+.topmenu {
+  background-color: #FFB4B0;
+  border-color:  black;
+  border-style: solid;
+  padding: 20px;
+  margin: auto;  
+  }
+
+
+./* ul {
+	height : 50px;
+	padding : auto;
+	margin : auto;
+	
+}
+*/
+
+
+
+.topmenu a {
+	text-decoration: none;
+}
+
+
+
+.leftbox {
+	background-color: #00ffff;
+	border-style: solid;
+	width:25%;
+	text-align: left;
+	font-size: 16px;
+	display: inline-block;
+
+	
+}
+
+.leftbox li {
+
+	font-family: helvetica;
+}
+
+.leftbox h5 {
+	font-family:helvetica;
+	font-size: 14px;
+}
+.leftbox a {
+	text-decoration: none;
+
+}
+
+ .rightbox { 
+  border-color: black;
+  border-style: solid; 
+  width:50%;
+  text-align: left;
+  background-color: #FEFAC0;
+  color: #785616;
+  float: right;
+  display: block;
+   
+}
+
+.rightbox h3 {
+	font-size: 16px;
+
+}
+
+.rightbox p {
+	font-size: 0.8em;
+}
+
+select  {
+
+	width: 80%;
+	padding: 10px;
+}
+
+
+.artistOption {
+	margin : 1em;
+}
+
+
+
+.albumOption {
+	margin : 1em;
+}
+
+#button { 
+position:center; 
+margin : ;
+padding : 0.5em;
+
+}

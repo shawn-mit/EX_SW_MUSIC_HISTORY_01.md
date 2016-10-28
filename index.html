@@ -2,64 +2,85 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8"> 
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
   <title> Music || History </title>
-  <link rel="stylesheet" type = "text/css" href="styles.css"> 
+  <link rel="stylesheet" type = "text/css" href="CSS/styles.css"> 
 </head>
 
  	<body>
- 		<div id="main">
+ 		<div id = "wrapper">
 
- 		<header> 		
 
 			<div class="topmenu">
-				
-	  			<ul>
-				<li> <a href="#" >   View Music </a> </li> 
-				<li> | </li>
-				<li> <a href="#" >   Add Music  </a> </li>
-				<li> | </li>
-				<li> <a href="#" >   Profile  	</a> </li> 		 
- 				</ul>
+		 		<nav> 		
+						
+			  			<ul>
+							<li> <a href="#" > View Music </a> </li> 
+							<li> | </li>
+							<li> <a href="#" > Add Music  </a> </li>
+							<li> | </li>
+							<li> <a href="#" > Profile  </a> </li> 		 
+		 				</ul>
 
+		 		</nav>
 	 		</div>
-
- 		</header>
-	
+			
 			<div class="leftbox"> 
 				
 
-				 
-				<h5> Song Length: </h5>
-					<form>  </form>
-					<form> <input type="text" name="Song Length:" </form>
 
-				<h5> Artist: </h5>
-					<form>  </form>
+					<h5> Song Length: </h5>
 
-					<form> <input type="text" name="Artist:" </form>
+						<input type ="range" name="Song Length" min="0"  max = "10">
 
-				<h5> Album: </h5>
-					<form> <input type="text" name="Album:" </form>
-				
-				<h5> Genre: </h5> 
-					<form> <input type="text" name="Genre:" </form>
+
+						<br>
+
+				 	<label for="Artist"> Artist: </label>
+					 <select class = "artistOption" name= "Artist">
+					 <option value = "The Traveler" > The Travler </option>
+					 <option value = "Hendrix in the West" >  Hendrix in the West </option>
+					 <option value = "Every Day A Dollar Gone " > Every Day A Dollar Gone   </option>
+					 <option value = "Culture of Fear" > Culture of Fear </option>
+
+					 </select>
+					
+
+					 <label for="album"> Album: </label>
+					 <select class = "albumOption" name= "Album">
+					 <br>
+					 <option value = "The Travler" > The Travler </option>
+					 <option value = "Voo Doo Child" > Voo Doo Child </option>
+					 <option value = "Them Shoes " > Them Shoes  </option>
+					 <option value = "Tower Seven" > Tower Seven </option>
+
+					 </select>
+					
+					<h5> Genre: </h5> 
 
 
 				<div class= "table"> 
 
-				<table>
-				<tr> <input type="checkbox" name="Genre" value="Rock"> Rock </tr> 
-				<tr> <input type="checkbox" name="Genre" value= "Electronic"> Electronic </tr>
-				<tr> <input type="checkbox" name="Genre" value="Classical"> Classical </tr> 	
-				</table>
-				</div>
-				<div class="table2">
-				<table>
-				<tr> <input type="checkbox" name="Genre" value="Blues"> Blues </tr>  
-				<tr> <input type="checkbox" name="Genre" value="Hip Hop"> Hip Hop </tr>
-				<tr> <input type="checkbox" name="Genre" value="Jazz"> Jazz </tr>  
-				</table>
+				
+						<table>
+							 <tr>
+							<td> <input type="checkbox" name ="Genre" value="Rock" > Rock </td>
+							<td> <input type="checkbox" name="Genre" value ="Pop"> Pop </td>
+							</tr>
+							<tr>
+							<td> <input type="checkbox" name="Genre" value="Classical"> Classical </td>
+							<td> <input type="checkbox" name="Genre" value="Blues"  > Blues </td>
+							</tr>
+							<tr>
+							<td> <input type="checkbox" name ="Genre" value= "Hip Hop"> Hip Hop </td>
+							<td> <input type="checkbox" name="Genre" value ="Jazz" > Jazz </td>
+							</tr>					
+						</table>
+						<br>
+
+				<input type="button" id="button" name = "Genre" value = "Filter ">
 
 				</div>
 
@@ -68,22 +89,19 @@
 
 			<div class="rightbox">
 
-				<h3> Greece 2000 </h3>
-				 	<p> Three Drives On Vinyl </p> <p> TrancePort </p> Electronic </p> 
-			 	
-			 	<h3> Voodoo Child </h3>
-				 	<p> Jimi Hendrix </p> <p> Hendrix in the West </p> Rock </p>
-			 	
-			 	<h3> Them Shoes </h3>
-				 <p> Patrick Kearney </p> <p> Every Day Another Dollar Gone </p> Blues </p>
+						<h3> The Traveler </h3>
+						 	<p> John Digweed | Nick Muir </p> <p> The Traveler Album </p> <p> Hip Hop </p>
+					 	
+					 	<h3> VooDoo Child </h3>
+						 	<p> Jimi Hendrix </p> <p> Hendrix in the West </p> <p>Rock </p>
+					 	
+					 	<h3> Them Shoes </h3>
+						 <p> Patrick Kearney </p> <p> Every Day Another Dollar Gone </p> <p>Blues </p>
 
-			 	<h3> Tower Seven  </h3>
-				 	<p> Thievery Corporation </p> <p> Culture of Fear </p> Jazz </p>
-		 	</div>
-		
+					 	<h3> Tower Seven  </h3>
+						 	<p> Thievery Corporation </p> <p> Culture of Fear </p> <p>Jazz </p>
+			</div>
 
-		</div> 
-
+ 		</div>		
 	</body>
-
 </html>
