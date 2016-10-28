@@ -1,5 +1,8 @@
+
+
 body {
 	margin: 5em;
+  font-size: 2em;
 }
 
 nav {
@@ -7,22 +10,7 @@ nav {
 	margin: 0, auto;
 }
 
-#wrapper {
-		border-style: solid;
-		border-color: black;
-		border-spacing: 50px;
-		padding : 10px ;
-		
 
-	}
-
-table {
-
-	display: inline-block;
-	border-style: 0.5px;
-	margin : 0.5em;
-
-}
 
 
 
@@ -33,22 +21,17 @@ table {
 	list-style-type: none;
 }
 
+
 .topmenu {
   background-color: #FFB4B0;
-  border-color:  black;
-  border-style: solid;
-  padding: 20px;
-  margin: auto;  
+  border: solid black 1px;
+  padding: 2px;
+  max-width: 100%;
+  margin: 1rem;
+  float : top;
+
   }
 
-
-./* ul {
-	height : 50px;
-	padding : auto;
-	margin : auto;
-	
-}
-*/
 
 
 
@@ -60,49 +43,49 @@ table {
 
 .leftbox {
 	background-color: #00ffff;
-	border-style: solid;
-	width:25%;
-	text-align: left;
+	 	border: solid black 1px;
+	width:40%;
+	text-align: center;
 	font-size: 16px;
 	display: inline-block;
-
+	float:left;
 	
 }
 
-.leftbox li {
-
-	font-family: helvetica;
-}
 
 .leftbox h5 {
-	font-family:helvetica;
 	font-size: 14px;
 }
+
+
 .leftbox a {
 	text-decoration: none;
 
 }
 
  .rightbox { 
-  border-color: black;
-  border-style: solid; 
-  width:50%;
+ 	border: solid black 1px;
+  width:57%;
   text-align: left;
   background-color: #FEFAC0;
   color: #785616;
-  float: right;
-  display: block;
+  display: inline-block;
+  float : right;
    
 }
 
 .rightbox h3 {
-	font-size: 16px;
+	font-size: 14px;
 
 }
 
 .rightbox p {
-	font-size: 0.8em;
+	font-size: 12px;
 }
+
+#wrapper {
+	margin: 1rem;
+	}
 
 select  {
 
@@ -110,20 +93,55 @@ select  {
 	padding: 10px;
 }
 
-
-.artistOption {
-	margin : 1em;
+label {
+	width : 60;
+	padding: 2px;
 }
 
+
+table {
+
+	display: inline-block;
+	
+
+}
 
 
 .albumOption {
-	margin : 1em;
+	padding: 1px;
+}
+
+.artistOption {
+	padding: 1px;
 }
 
 #button { 
-position:center; 
-margin : ;
-padding : 0.5em;
 
+margin: 10px;
+position:center;
+
+padding: 2px;
+
+}
+
+
+
+
+
+/****** CSS For Music History 3 ****/
+
+
+ul > li {
+  display: inline;
+  list-style-type: none;
+  margin: 5px 15px 0 15px;
+  padding: 5px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }

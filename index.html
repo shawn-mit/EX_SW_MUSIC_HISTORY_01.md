@@ -8,26 +8,41 @@
   <title> Music || History </title>
   <link rel="stylesheet" type = "text/css" href="CSS/styles.css"> 
 </head>
+<body>
+ 	<div>
 
- 	<body>
- 		<div id = "wrapper">
+	 		<section class="hidden" id="add-view">
+		 		<label> Song: <input type="text" name="SongInput"></label>
+		 		<label> Artist: <input type="text" name="ArtistInput"></label>	 		
+		 		<label> Album: <input type="text" name="AlbumInput"></label>
+				<button id="AddButton"> Add: </button>
+
+		 	</section>
 
 
 			<div class="topmenu">
 		 		<nav> 		
 						
 			  			<ul>
-							<li> <a href="#" > View Music </a> </li> 
-							<li> | </li>
-							<li> <a href="#" > Add Music  </a> </li>
-							<li> | </li>
-							<li> <a href="#" > Profile  </a> </li> 		 
+							  <li><a href="#" id="link-list">List View </a></li>
+
+								<li> | </li>
+
+							  <li><a href="#" id="link-add">Add</a></li>
 		 				</ul>
 
 		 		</nav>
 	 		</div>
 			
-			<div class="leftbox"> 
+
+
+
+
+
+	 		<section id="list-view">
+	 			<div class ="leftrightwrapper">
+
+					<div class="leftbox"> 
 				
 
 
@@ -40,10 +55,10 @@
 
 				 	<label for="Artist"> Artist: </label>
 					 <select class = "artistOption" name= "Artist">
-					 <option value = "The Traveler" > The Travler </option>
-					 <option value = "Hendrix in the West" >  Hendrix in the West </option>
-					 <option value = "Every Day A Dollar Gone " > Every Day A Dollar Gone   </option>
-					 <option value = "Culture of Fear" > Culture of Fear </option>
+					 <option value = "John Digweed / Nick Muir" > John Digweed / Nick Muir </option>
+					 <option value = "Jimi Hendrix" >  Jimi Hendrix </option>
+					 <option value = "Patrick Kearney " >  Patrick Kearney  </option>
+					 <option value = "Thievery Corporation" > Thievery Corporation </option>
 
 					 </select>
 					
@@ -51,10 +66,10 @@
 					 <label for="album"> Album: </label>
 					 <select class = "albumOption" name= "Album">
 					 <br>
-					 <option value = "The Travler" > The Travler </option>
-					 <option value = "Voo Doo Child" > Voo Doo Child </option>
-					 <option value = "Them Shoes " > Them Shoes  </option>
-					 <option value = "Tower Seven" > Tower Seven </option>
+					 <option value = "The Travler" > The Traveler </option>
+					 <option value = "Hendrix in the West" > Hendrix in the West </option>
+					 <option value = "Every Day A Dollar Gone " > Every Day A Dollar Gone  </option>
+					 <option value = "Culture of Fear" > Culture of Fear </option>
 
 					 </select>
 					
@@ -80,28 +95,40 @@
 						</table>
 						<br>
 
-				<input type="button" id="button" name = "Genre" value = "Filter ">
+				<input type="button" id="button" name = "Genre" value = "Filter">
 
 				</div>
 
 			</div>
 
 
-			<div class="rightbox">
+			</section>
+							<div class="rightbox">
 
-						<h3> The Traveler </h3>
-						 	<p> John Digweed | Nick Muir </p> <p> The Traveler Album </p> <p> Hip Hop </p>
-					 	
-					 	<h3> VooDoo Child </h3>
-						 	<p> Jimi Hendrix </p> <p> Hendrix in the West </p> <p>Rock </p>
-					 	
-					 	<h3> Them Shoes </h3>
-						 <p> Patrick Kearney </p> <p> Every Day Another Dollar Gone </p> <p>Blues </p>
+										<h3> The Traveler </h3>
+										 	<p> John Digweed | Nick Muir </p> <p> The Traveler Album </p> <p> Hip Hop </p>
+									 	
+									 	<h3> VooDoo Child </h3>
+										 	<p> Jimi Hendrix </p> <p> Hendrix in the West </p> <p>Rock </p>
+									 	
+									 	<h3> Them Shoes </h3>
+										 <p> Patrick Kearney </p> <p> Every Day Another Dollar Gone </p> <p>Blues </p>
 
-					 	<h3> Tower Seven  </h3>
-						 	<p> Thievery Corporation </p> <p> Culture of Fear </p> <p>Jazz </p>
-			</div>
+									 	<h3> Tower Seven  </h3>
+										 	<p> Thievery Corporation </p> <p> Culture of Fear </p> <p>Jazz </p>
 
+							</div>
+
+	 			</div>
+				  
+
+				
  		</div>		
+
+	 	</div>
+		<!-- <script type="text/javascript" src="home.js"></script> -->
+		<script type="text/javascript" src="list.js"> </script>
+		<script type="songs/javascript" src="songs.js"> </script>
+		<script type="text/javascript" src="add.js"> </script>
 	</body>
 </html>
