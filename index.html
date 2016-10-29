@@ -1,85 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1">
- 
+<head>  
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <title> Music || History </title>
   <link rel="stylesheet" type = "text/css" href="CSS/styles.css"> 
 </head>
 <body>
- 	<div>
+ 	<div id ="mainwrapper">
+
 
 	 		<section class="hidden" id="add-view">
-		 		<label> Song: <input type="text" name="SongInput"></label>
-		 		<label> Artist: <input type="text" name="ArtistInput"></label>	 		
+		 		<label> Song: <input type="text" name="SongInput"> Time </label> <br>
+		 		<label> Artist: <input type="text" name="ArtistInput"></label>	<br> 		
 		 		<label> Album: <input type="text" name="AlbumInput"></label>
 				<button id="AddButton"> Add: </button>
 
 		 	</section>
 
-
 			<div class="topmenu">
 		 		<nav> 		
 						
 			  			<ul>
-							  <li><a href="#" id="link-list">List View </a></li>
+							  <li> <a href="#" id="link-list">List View </a></li>
 
 								<li> | </li>
 
-							  <li><a href="#" id="link-add">Add</a></li>
+							  <li> <a href="#" id="link-add">Add</a></li>
 		 				</ul>
 
 		 		</nav>
 	 		</div>
 			
-
-
-
-
-
 	 		<section id="list-view">
-	 			<div class ="leftrightwrapper">
+ 			<div class= "secondwrapper">
 
-					<div class="leftbox"> 
-				
+				<div class="leftbox"> 
 
+					<label for= "Song Length"> Song Length:</label>
+					<br>
+					<input type ="range" id="songlength" name="Song Length" min="0" max ="10">
 
-					<h5> Song Length: </h5>
-
-						<input type ="range" name="Song Length" min="0"  max = "10">
-
-
-						<br>
+					 <br>
 
 				 	<label for="Artist"> Artist: </label>
+
 					 <select class = "artistOption" name= "Artist">
-					 <option value = "John Digweed / Nick Muir" > John Digweed / Nick Muir </option>
+					 <option value = "John Digweed And Nick Muir" > John Digweed And Nick Muir </option>
 					 <option value = "Jimi Hendrix" >  Jimi Hendrix </option>
 					 <option value = "Patrick Kearney " >  Patrick Kearney  </option>
 					 <option value = "Thievery Corporation" > Thievery Corporation </option>
-
 					 </select>
 					
 
-					 <label for="album"> Album: </label>
-					 <select class = "albumOption" name= "Album">
+					 <label for="Album"> Album: </label>
+					
+					 <br>
+					
+					 <select class = "albumOption" name="Album">					
 					 <br>
 					 <option value = "The Travler" > The Traveler </option>
 					 <option value = "Hendrix in the West" > Hendrix in the West </option>
 					 <option value = "Every Day A Dollar Gone " > Every Day A Dollar Gone  </option>
 					 <option value = "Culture of Fear" > Culture of Fear </option>
-
 					 </select>
 					
-					<h5> Genre: </h5> 
+						<label for="Genre"> Genre: </label>
 
-
-				<div class= "table"> 
-
-				
-						<table>
+												
+						<table class= "table">
 							 <tr>
 							<td> <input type="checkbox" name ="Genre" value="Rock" > Rock </td>
 							<td> <input type="checkbox" name="Genre" value ="Pop"> Pop </td>
@@ -93,40 +82,37 @@
 							<td> <input type="checkbox" name="Genre" value ="Jazz" > Jazz </td>
 							</tr>					
 						</table>
-						<br>
+							
+							<br>
 
-				<input type="button" id="button" name = "Genre" value = "Filter">
+						<input type="button" id="button" name ="Genre" value = "Filter">
 
+							
 				</div>
 
+				<div class="rightbox">
+
+						<h3> The Traveler </h3>
+						 	<p> John Digweed and Nick Muir </p> <p>| The Traveler Album |</p> <p> Hip Hop </p>
+					 	
+					 	<h3> VooDoo Child </h3>
+						 	<p> Jimi Hendrix </p> <p>| Hendrix in the West |</p> <p> Rock </p>
+					 	
+					 	<h3> Them Shoes </h3>
+						 <p> Patrick Kearney </p> <p>| Every Day Another Dollar Gone |</p> <p>Blues </p>
+
+					 	<h3> Tower Seven  </h3>
+						 	<p> Thievery Corporation </p> <p>| Culture of Fear |</p> <p>Jazz </p>
+				</div>
 			</div>
-
-
 			</section>
-							<div class="rightbox">
 
-										<h3> The Traveler </h3>
-										 	<p> John Digweed | Nick Muir </p> <p> The Traveler Album </p> <p> Hip Hop </p>
-									 	
-									 	<h3> VooDoo Child </h3>
-										 	<p> Jimi Hendrix </p> <p> Hendrix in the West </p> <p>Rock </p>
-									 	
-									 	<h3> Them Shoes </h3>
-										 <p> Patrick Kearney </p> <p> Every Day Another Dollar Gone </p> <p>Blues </p>
 
-									 	<h3> Tower Seven  </h3>
-										 	<p> Thievery Corporation </p> <p> Culture of Fear </p> <p>Jazz </p>
 
-							</div>
 
-	 			</div>
-				  
-
-				
- 		</div>		
-
-	 	</div>
-		<!-- <script type="text/javascript" src="home.js"></script> -->
+			
+	</div>
+	<!-- <script type="text/javascript" src="home.js"></script> -->
 		<script type="text/javascript" src="list.js"> </script>
 		<script type="songs/javascript" src="songs.js"> </script>
 		<script type="text/javascript" src="add.js"> </script>
