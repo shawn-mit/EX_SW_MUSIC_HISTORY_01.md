@@ -28,8 +28,16 @@ AddButton.addEventListener("click", GetInput);
 
 function GetInput(){
 
-	
+ songInput = document.getElementById("SongInput").value
+
+ albumInput= document.getElementById("AlbumInput").value
+
+ artistInput = document.getElementById("ArtistInput").value 
+
+ AddButton = document.getElementById ("AddButton").value
 
 	
-	
 }
+
+return GetInput; 
+

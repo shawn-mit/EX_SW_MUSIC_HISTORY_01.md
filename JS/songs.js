@@ -1,25 +1,27 @@
-"use stict";
+	"use stict";
 
 
-var songs = [];
+	var songs = [];
 
-songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
-songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
-songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
-songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
-songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
+	songs[songs.length] = "Legs > by Z*ZTop on the album Eliminator";
+	songs[songs.length] = "The Logical Song > by Supertr@amp on the album Breakfast in America";
+	songs[songs.length] = "Another Brick in the Wall > by Pink Floyd on the album The Wall";
+	songs[songs.length] = "Welco(me to the Jungle > by Guns & Roses on the album Appetite for Destruction";
+	songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little Pill";
 
 
-//Add songs to beginning and end of the arrays 
+	//Add songs to beginning and end of the arrays 
 
-songs.unshift("The Traveler by John Digweed and Nick Muir on the album The Traveler");
-songs.push("Tower Seven by Thievery Corporation on the album Culture of Fear");
+	songs.unshift("The Traveler by John Digweed and Nick Muir on the album The Traveler");
+	songs.push("Tower Seven by Thievery Corporation on the album Culture of Fear");
 
-var songsEl = document.getElementById("songs");
+	//console.log(songs);
 
-function PopulateDom () {
+//var songsEl = document.getElementById("songs");
 
-	songsEl.innerHTML = "";
+//function PopulateDom () {
+
+//	songsEl.innerHTML = "";
 
 for (var i=0; i < songs.length; i++) {
 
@@ -28,11 +30,15 @@ for (var i=0; i < songs.length; i++) {
 
 	console.log("newSongs", newSongs); 
 
-	songsEl.innerHTML += `<div>${newSongs} </div>`;
+	songsEl.innerHTML += `<div> ${newSongs} </div>`;
 
+	PopulateDom()
 
-	}			
+	}	
+
 }
+
+
 
 
 
@@ -56,6 +62,7 @@ function GetInput(){
 
 	songs.push(SongInput.value + "by" + ArtistInput.value +" on the album" + AlbumInput.value);
 	console.log ("input song", newSongs);
+	
 	PopulateDom();
 	
 }

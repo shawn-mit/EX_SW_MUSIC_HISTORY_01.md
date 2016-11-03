@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
 
 <head>  
@@ -9,15 +9,7 @@
 <body>
  	<div id ="mainwrapper">
 
-
-	 		<section class="hidden" id="add-view">
-		 		<label> Song: <input type="text" name="SongInput"> Time </label> <br>
-		 		<label> Artist: <input type="text" name="ArtistInput"></label>	<br> 		
-		 		<label> Album: <input type="text" name="AlbumInput"></label>
-				<button id="AddButton"> Add: </button>
-
-		 	</section>
-
+ 			<!--main top menu with navigation links-->
 			<div class="topmenu">
 		 		<nav> 		
 						
@@ -32,14 +24,23 @@
 		 		</nav>
 	 		</div>
 			
-	 		<section id="list-view">
- 			<div class= "secondwrapper">
+			<!--Section for the user to click on Add and see the yellow song box-->	
 
-				<div class="leftbox"> 
+	 		<section class="hidden" id="add-view">
+		 		<label> Song: <input type="text" name="SongInput"> </label> <br>
+		 		<label> Artist: <input type="text" name="ArtistInput"></label>	<br> 		
+		 		<label> Album: <input type="text" name="AlbumInput"></label>
+				<button id="AddButton"> Add: </button>
+		 	</section>
+
+	 		<!--Section for blue and yellow boxes and list view-->
+	 		<section id="list-view">
+					<div class= "secondwrapper">
+						<div class="leftbox"> 
 
 					<label for= "Song Length"> Song Length:</label>
 					<br>
-					<input type ="range" id="songlength" name="Song Length" min="0" max ="10">
+					<input type ="range" id="songlength" ename="Song Length" min="0" max ="10">
 
 					 <br>
 
@@ -90,6 +91,8 @@
 							
 				</div>
 
+				<!--yellow box with songs to be seen also on the Add link once the user clicks -->
+
 				<div class="rightbox">
 
 						<h3> The Traveler </h3>
@@ -105,16 +108,12 @@
 						 	<p> Thievery Corporation </p> <p>| Culture of Fear |</p> <p>Jazz </p>
 				</div>
 			</div>
-			</section>
-
-
-
-
-			
+			</section>			
 	</div>
+
 	<!-- <script type="text/javascript" src="home.js"></script> -->
 		<script type="text/javascript" src="list.js"> </script>
-		<script type="songs/javascript" src="songs.js"> </script>
+		<script type="text/javascript" src="songs.js"> </script>
 		<script type="text/javascript" src="add.js"> </script>
 	</body>
 </html>
